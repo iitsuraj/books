@@ -1,0 +1,42 @@
+{
+  "name": "yogicscriptures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iitsuraj/yogicscriptures.git"
+  },
+  "keywords": [
+    "iitsuraj",
+    "itsuraj",
+    "tools",
+    "ytthumbnaildownloader",
+    "qrcodegenerator"
+  ],
+  "author": "iitsuraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iitsuraj/yogicscriptures/issues"
+  },
+  "homepage": "https://github.com/iitsuraj/yogicscriptures#readme",
+  "dependencies": {
+    "next": "^10.2.2",
+    "next-compose-plugins": "^2.2.1",
+    "next-pwa": "^5.2.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "next-sitemap": "^1.6.57",
+    "postcss": "^8.3.0",
+    "rss": "^1.2.2",
+    "tailwindcss": "^2.1.2"
+  }
+}
