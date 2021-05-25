@@ -28,19 +28,21 @@ const Pagination = ({ pages, page }) => {
         {previousPage !== "#" ? (
           <link
             rel="prev"
-            href={`https://yogicscriptures.itsuraj.com${previousPage}`}
+            href={`https://yogicscriptures.itsuraj.com${previousPage}/`}
           />
         ) : null}
         {nextPage !== "#" ? (
           <link
             rel="next"
-            href={`https://yogicscriptures.itsuraj.com${nextPage}`}
+            href={`https://yogicscriptures.itsuraj.com${nextPage}/`}
           />
         ) : null}
-        <link
-          rel="canonical"
-          href={`https://yogicscriptures.itsuraj.com/page/${page}/`}
-        />
+        {page !== 1 ? (
+          <link
+            rel="canonical"
+            href={`https://yogicscriptures.itsuraj.com/page/${page}/`}
+          />
+        ) : null}
       </Head>
 
       <div className="flex">
