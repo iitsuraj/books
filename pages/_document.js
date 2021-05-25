@@ -11,7 +11,7 @@ class MyDocument extends Document {
       title: "Download Yoga & Medication Ebooks - Yogicscriptures",
       description:
         "Free yoga book download. Now you can read or download these e-books of yoga or meditation online for free in pdf format and these all books are very much interesting knowledge driven.",
-      image: "/banner.png",
+      image: "https://yogicscriptures.itsuraj.com/banner.png",
     };
 
     return (
