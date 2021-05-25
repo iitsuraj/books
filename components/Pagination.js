@@ -25,7 +25,7 @@ const Pagination = ({ pages, page }) => {
   return (
     <div className="mt-8">
       <Head>
-        {previousPage !== "#" ? (
+        {previousPage !== "#" || page !== 2 ? (
           <link
             rel="prev"
             href={`https://yogicscriptures.itsuraj.com${previousPage}/`}
@@ -42,6 +42,9 @@ const Pagination = ({ pages, page }) => {
             rel="canonical"
             href={`https://yogicscriptures.itsuraj.com/page/${page}/`}
           />
+        ) : null}
+        {page === 2 ? (
+          <link rel="prev" href={`https://yogicscriptures.itsuraj.com`} />
         ) : null}
       </Head>
 
