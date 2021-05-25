@@ -39,7 +39,7 @@ const Pagination = ({ pages, page }) => {
         ) : null}
         <link
           rel="canonical"
-          href={`https://yogicscriptures.itsuraj.com/page/${page}`}
+          href={`https://yogicscriptures.itsuraj.com/page/${page}/`}
         />
       </Head>
 
