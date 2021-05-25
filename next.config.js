@@ -8,6 +8,11 @@ module.exports = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/page/1/",
+        destination: "/",
+        permanent: true,
+      },
     ];
   },
 };
