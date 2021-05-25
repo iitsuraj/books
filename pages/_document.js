@@ -8,10 +8,10 @@ class MyDocument extends Document {
 
   render() {
     const meta = {
-      title: "Next.js Blog Starter Kit",
-      description: "Clone and deploy your own Next.js portfolio in minutes.",
-      image:
-        "https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png",
+      title: "Download Yoga & Medication Ebooks - Yogicscriptures",
+      description:
+        "Free yoga book download. Now you can read or download these e-books of yoga or meditation online for free in pdf format and these all books are very much interesting knowledge driven.",
+      image: "/banner.png",
     };
 
     return (
@@ -24,7 +24,7 @@ class MyDocument extends Document {
           <meta property="og:title" content={meta.title} />
           <meta property="og:image" content={meta.image} />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@yourname" />
+          <meta name="twitter:site" content="@itsuraj_offical" />
           <meta name="twitter:title" content={meta.title} />
           <meta name="twitter:description" content={meta.description} />
           <meta name="twitter:image" content={meta.image} />

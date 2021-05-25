@@ -5,7 +5,7 @@ export async function getStaticPaths() {
   const { pages } = await res.json();
   const paths = [];
 
-  for (let i = 1; i < pages + 1; i++) {
+  for (let i = 2; i < pages + 1; i++) {
     paths.push(`/page/${i}`);
   }
   return {
@@ -17,16 +17,18 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const { page } = params;
   const res = await fetch(`${process.env.DB_HOST}?pageNumber=${page}`);
-  const { posts } = await res.json();
+  const data = await res.json();
   return {
     props: {
-      posts,
+      posts: data.posts,
+      page: data.page,
+      pages: data.pages,
     },
   };
 }
 
-const page = ({ posts }) => {
-  return <Layout posts={posts} />;
+const page = ({ posts, page, pages }) => {
+  return <Layout posts={posts} page={page} pages={pages} />;
 };
 
 export default page;
