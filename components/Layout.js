@@ -29,17 +29,14 @@ const Layout = ({ posts, pages, page }) => {
                           </a> */}
                     </div>
                     <div className="mt-2">
-                      <a
-                        href="#"
-                        className="text-2xl font-bold text-gray-700 hover:underline"
-                      >
+                      <div className="text-2xl font-bold text-gray-700 hover:underline">
                         {post.name}
-                      </a>
+                      </div>
                       <p className="mt-2 text-gray-600">{post.description}</p>
                     </div>
                     <div className="flex items-center justify-end mt-4">
                       <a
-                        href="#"
+                        href={post.link}
                         className="px-2 py-1 font-bold text-gray-100 bg-gray-600 rounded hover:bg-gray-500"
                       >
                         Download
